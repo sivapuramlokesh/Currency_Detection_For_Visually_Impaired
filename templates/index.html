@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YOLO-Currency Notes Detection</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/index.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://xxx.xxx.xxx.xxx:8080/static/index.css"> -->
+  <!-- jQuery -->
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script> -->
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script> -->
+
+  <!-- Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <!-- My JS -->
+  <script type="text/javascript" src="../static/index.js"></script>
+  <!-- <script type="text/javascript" src="http://xxx.xxx.xxx.xxx:8080/static/index.js"></script> -->
+  
+</head>
+
+<body>    
+	<div class="app">
+		<div class="app-header">			
+			<p class="title-wrap">Indian Currency Notes Detection</p>			
+			<h1 class="text-dark mb-2">Upload Indian Currency Note to get recognized Audio!</h1>
+			<br />
+			<h4 class="text-dark mb-5">(Please upload jpg format files only)</h4>
+			
+			<div class="pre-img"><span><img id="imagebox" src="" /></span></div>
+	  
+			<form enctype="multipart/form-data" action="/predict2" method="post">		   
+				<p class="text-dark mb-2"> 
+					<input id="imageinput" type="file" name="files" onchange="readUrl(this)">
+					<input type="submit" value="Predict" />
+				</p> 							
+			</form>	
+		</div>
+	</div> 
+
+<script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").classList.toggle("menu_width");
+  document
+    .querySelector(".custom_menu-btn")
+    .classList.toggle("menu_btn-style");
+}
+</script>
+
+</body>
+
+</html>

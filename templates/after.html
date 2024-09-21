@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YOLO-Currency Notes Detection</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/index.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://xxx.xxx.xxx.xxx:8080/static/index.css"> -->
+  <!-- jQuery -->
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script> -->
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script> -->
+
+  <!-- Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <!-- My JS -->
+  <script type="text/javascript" src="../static/index.js"></script>
+  <!-- <script type="text/javascript" src="http://xxx.xxx.xxx.xxx:8080/static/index.js"></script> -->
+  
+</head>
+
+<body>
+  <div class="footer_bg">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="/home">
+              <span>
+                
+              </span>
+            </a>
+            
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">              
+                
+              </div>
+            </div>
+        </div>
+        </nav>
+      </header>
+  </div>
+
+  <section class=" slider_section position-relative">
+      <div id="Customcarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">			 		 
+			 <br />			 
+              <h1 class="text-dark mb-5"> Your Results </h1>
+               				
+				 <div class="img-box">                   
+					 <img src= "{{img_src}}" height="360" width="600" alt="output image">  
+                  </div>
+			   
+			  <p class="text-dark"> prediction is :
+                <span style="font-weight: 700;">{{pred_output}}</span>
+              </p>
+
+                <br />
+                <br />
+                <a href="{{ url_for('index') }}"><button class="button mt-3">Try again?</button></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <br><br>
+      </section>
+        <!-- end about section -->
+        <div class="footer_bg">
+    
+        
+            <!-- end info_section -->
+        
+            
+            <!-- footer section -->
+          </div>
+        
+          <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+          <script type="text/javascript" src="static/js/bootstrap.js"></script>
+        
+          <script>
+            function openNav() {
+              document.getElementById("myNav").classList.toggle("menu_width");
+              document
+                .querySelector(".custom_menu-btn")
+                .classList.toggle("menu_btn-style");
+            }
+          </script>
+        </body>
+        
+        </html>
